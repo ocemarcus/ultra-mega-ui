@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-import quiz from '../views/SchoolTest'
+import schoolTest from '../views/SchoolTest'
 import question from '../views/Question'
 import student from '../views/Student'
 import studentResponse from '../views/StudentResult'
@@ -13,8 +13,8 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    },
-  ].concat(quiz, question, student, studentResponse)
+    } as any,
+  ].concat(schoolTest, question, student, studentResponse)
 })
 
 export default router
