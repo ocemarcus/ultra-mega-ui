@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: #f9f9f9;
+   color: #34495e;
+}
+h1{
+   color: #34495e;
+   font-weight: 400;
+}
+.menu-content {
+  background-color: #1b1b1b;
+  font-weight: bold;
+}
+.menu-content a {
+  color: #f9f9f9;
+}
+.card-body{
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 5px 5px #ebebeb;
+}
+.question_selected {
+  border-radius: 10pt;
+  padding: 4px;
+}
+.question_selected-success {
+  border: 1px solid #1dbe17;
+}
+.question_selected-error {
+  border: 1px solid #dd270f;
+}
