@@ -5,7 +5,11 @@ const URL = 'students/result'
 export class StudentResultService {
     private readonly server = new Server<StudentResultSchema>(URL)
     async find(): Promise<StudentResultSchema[]> {
-     return await this.server.find()
+      const response =  await this.server.find()
+        return response.map(item => {
+          item.average = Math.ceil(item.average)
+          return item
+      })
     }
     async findResult(id: string): Promise<StudentResultSchema> {
      const response = await this.server.findById(id)

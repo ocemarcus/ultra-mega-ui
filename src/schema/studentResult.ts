@@ -4,7 +4,7 @@ import type { SchoolTestSchema } from "./schoolTest"
 
 export type StudentResultSchema = {
     _id: string
-    average: string
+    average: number
     student_name: string
     student_email: string
     points_scored: string
