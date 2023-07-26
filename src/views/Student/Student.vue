@@ -74,7 +74,7 @@ async function save() {
         await studentService.save(save, info)
 
         await Notify.success('Enviado com sucesso')
-        setTimeout(() => router.go(0), 1000)
+        setTimeout(() => router.push('/'), 1000)
 
     } catch (error) {
         await Notify.error('Error para salvar')
